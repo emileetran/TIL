@@ -1,0 +1,55 @@
+// Place all the styles related to the Lessons controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.header {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  font-family: "Circular Std", "Helvetica Neue", "Helvetica";
+  letter-spacing: 2.5px;
+  font-size: 18px;
+}
+
+.form {
+  margin-left: 430px;
+  font-family: monospace;
+  font-size: 20px;
+  textarea {
+    margin-top: 10px;
+    border: 1px solid #9263EC;
+    width: 53%;
+    font-size: 17px;
+    font-family: monospace;
+    color: #E10D8A;
+  }
+  .button {
+    margin-left: 185px;
+    input[type="submit"] {
+      margin-top: 30px;
+      color: black;
+      border: 1px solid #fff;
+      font-size: 20px;
+      box-shadow: none;
+      font-family: monospace;
+      background-color: #CA9FFA;
+      letter-spacing: 1.5px;
+      padding: 10px 20px 10px 20px;
+      &:hover {
+        color: #FE5FB0;
+      }
+    }
+  }
+}
+
+
+#signature {
+  margin-top: 60px;
+  font-size: 13px;
+  color: #888;
+  font-family: "Circular Std", "Helvetica Neue", "Helvetica";
+  text-align: center;
+  a:link {
+    text-decoration: none;
+  }
+}

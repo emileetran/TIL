@@ -1,0 +1,17 @@
+<div class="header">
+  <h1>TODAY I LEARNED</h1>
+</div>
+<div class="form">
+  <p>Submit your TIL to get someone else's TIL</p>
+  <%= form_for @lesson, url: lessons_path do |f| %>
+  <div>
+    <%= f.text_area :content, rows: 8 %>
+  </div>
+  <div class="button">
+    <%= f.submit "DONE!" %>
+  </div>
+  <% end %>
+</div>
+<div id="signature">
+  <p>Made by <a href="http://emileetran.com/">Emilee Tran</a></p>
+</div>
