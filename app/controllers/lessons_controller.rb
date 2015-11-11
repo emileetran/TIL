@@ -9,12 +9,14 @@ class LessonsController < ApplicationController
   end
 
   def create
-    lesson_params = params['lesson'] # { 'content' => 'abc123' }
-    Lesson.create!(lesson_params)
-
     random_lesson_number = rand(Lesson.count)
     random_lesson = Lesson.offset(random_lesson_number).first
-
-    redirect_to lesson_path(random_lesson.id)
+    lesson_params = params['lesson'] # { 'content' => 'abc123' }
+    new_lesson = Lesson.create!(lesson_params)
+    if random_lesson == nil
+      redirect_to lesson_path(new_lesson.id)
+    else
+      redirect_to lesson_path(random_lesson.id)
+    end
   end
 end
